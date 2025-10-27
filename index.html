@@ -14,79 +14,95 @@
 
 
     <form>
-        <div class="container-fluid border border-black">
-            <div class="border border-black mb-3 p-2">
-                <h3>Payment form example</h3>
+        <div class="container-fluid" style="justify-content:center; width:750px; border: 1px solid gainsboro;margin-top: 20px;">
+            <div class="container-" style="border: 1px solid gainsboro">
+                <h4>Payment form example</h4>
             </div>
-            <div>
-                <input type="text" class="form-control" id="missing fields" placeholder="Some fields are missing">
-            </div>
-            <div class="mb-3 d-flex">
-                <div>
-                    <label for="exampleInputCard" class="form-label">Card #</label>
-                    <input type="number" class="form-control" id="exampleInput" placeholder="XXXXXXXXXXXXXXXX">
+                <div class="container">
+                    <input type="text" class="form-control" id="missing fields" style="background-color: #f8d7da; color: #721c24;" placeholder="Some fields are missing">
                 </div>
-                <div>
-                    <label for="exampleInputCard" class="form-label">CVC #</label>
-                    <input type="number" class="form-control" id="exampleInput" placeholder="0000">
-                </div>
-                <div>
-                    <label for="exampleInputCard" class="form-label">Amount</label>
-                    <div class="d-flex">
-                        <p>$</p>
-                        <input type="number" class="form-control" id="exampleInput" placeholder="Amount">
+            
+                <div class="mb-3 d-flex">
+                    <div>
+                        <label for="exampleInputCard" class="form-label">Card #</label>
+                        <input type="number" class="form-control" id="exampleInput" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+                    <div>
+                        <label for="exampleInputCard" class="form-label">CVC #</label>
+                        <input type="number" class="form-control" id="exampleInput" placeholder="0000">
+                    </div>
+                    <div>
+                        <label for="exampleInputCard" class="form-label">Amount</label>
+                        <div class="d-flex">
+                            <p>$</p>
+                            <input type="number" class="form-control" id="exampleInput" placeholder="Amount">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="mb-3 d-flex">
-                <div>
-                    <label for="exampleInputCard" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="exampleInput">
+                <div class="mb-3 d-flex">
+                    <div>
+                        <label for="exampleInputCard" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="exampleInput">
+                    </div>
+                    <div>
+                        <label for="exampleInputCard" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="exampleInput">
+                    </div>
                 </div>
-                <div>
-                    <label for="exampleInputCard" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="exampleInput">
-                </div>
-            </div>
 
-            <div class="mb-3 d-flex">
-                <div>
-                    <label for="exampleInputCard" class="form-label">City</label>
-                    <input type="text" class="form-control" id="exampleInputE">
+                <div class="mb-3 d-flex">
+                    <div>
+                        <label for="exampleInputCard" class="form-label">City</label>
+                        <input type="text" class="form-control" id="exampleInputE">
+                    </div>
+                    <div>
+                        <label for="exampleInputCard" class="form-label">State</label>
+                        <input type="text" class="form-control" id="exampleInput">
+                    </div>
+                    <div>
+                        <label for="exampleInputCard" class="form-label">Postal code</label>
+                        <input type="number" class="form-control" id="exampleInput">
+                    </div>
                 </div>
-                <div>
-                    <label for="exampleInputCard" class="form-label">State</label>
-                    <input type="text" class="form-control" id="exampleInput">
+                <div class="d-flex">
+                    <div class="mb-3 d-flex">
+                        <div>
+                            <p>We accept:</p>
+                        </div>
+                        <div class="d-flex" <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1"> <i
+                                    class="fa-brands fa-cc-mastercard"></i></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1"> <i
+                                    class="fa-brands fa-cc-visa"></i></i></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1"> <i
+                                    class="fa-brands fa-google-pay"></i></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1"> <i
+                                    class="fa-brands fa-apple-pay"></i></label>
+                        </div>
+
+                    </div>
+                    <div class="container" style="justify-content:center; width:400px;">
+                        <label for="exampleInputCard" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleInput"></textarea>
+                        <p>Add any notes here</p>
+                    </div>
                 </div>
-                <div>
-                    <label for="exampleInputCard" class="form-label">Postal code</label>
-                    <input type="number" class="form-control" id="exampleInput">
+
+                <div class="d-flex justify-content-end border">
+                    <button type="submit" class="btn btn-secondary">Send</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </div>
             </div>
-            <div class="mb-3 d-flex">
-            <div>
-                <p>We accept:</p>
-            
-                <i class="fa-brands fa-cc-mastercard"></i>
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-google-pay"></i>
-                <i class="fa-brands fa-apple-pay"></i>
-            </div>
-            <div>
-                <label for="exampleInputCard" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleInput"></textarea>
-                <p>Add any notes here</p>
-            </div>
-        </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
 
